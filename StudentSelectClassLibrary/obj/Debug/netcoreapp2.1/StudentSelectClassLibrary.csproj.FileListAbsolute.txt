@@ -1,0 +1,10 @@
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.deps.json
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.dll
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.pdb
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.csproj.CoreCompileInputs.cache
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.AssemblyInfoInputs.cache
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.AssemblyInfo.cs
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.dll
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.pdb
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.runtimeconfig.json
+E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.runtimeconfig.dev.json
