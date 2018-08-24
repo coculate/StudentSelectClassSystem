@@ -1,0 +1,75 @@
+﻿
+@{
+    var title = ViewBag.Title;
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <style>
+        .login {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+            .login .title {
+                margin-top: 100px;
+                text-align: center;
+                color: white;
+            }
+
+            .login .login-body {
+                padding: 0 100px;
+            }
+
+                .login .login-body .login-body-main {
+                    background-color: white;
+                    padding: 40px;
+                }
+
+                    .login .login-body .login-body-main .login-body-main-title {
+                        margin: 0 0 20px;
+                    }
+
+            .login .copyright {
+                text-align: center;
+                color: #999;
+                margin-top: 10px;
+            }
+
+        p {
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body style="background-color:#000000">
+    <form action="~/Login/LoginSubmit" method="POST">
+        <div class="login">
+            <h2 class="title" style="">学生选课系统-学生端</h2>
+            <div class="login-body">
+                <div class="login-body-main">
+                    <h3 class="login-body-main-title">请登录</h3>
+                    <div class="input-group" style="margin-bottom: 20px;">
+                        <span class="input-group-addon">学号</span>
+                        <input class="form-control" name="username" placeholder="请输入学号" />
+                    </div>
+                    <div class="input-group" style="margin-bottom: 40px;">
+                        <span class="input-group-addon">密码</span>
+                        <input class="form-control" type="password" name="password" placeholder="请输入密码" />
+                    </div>
+                    <button class="btn btn-info text-center" type="submit" style="width: 100%">登录</button>
+                </div>
+            </div>
+
+            <p class="copyright">&copy;&nbsp;&nbsp; By Coculate</p>
+        </div>
+    </form>
+</body>
+</html>

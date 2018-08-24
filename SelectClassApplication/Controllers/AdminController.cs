@@ -94,11 +94,13 @@ namespace SelectClassApplication.Controllers
 
         public IActionResult CourseDetailResult()
         {
+            ViewBag.Title = "学生选课系统-后台管理-课程详情";
             return View();
         }
 
         public IActionResult DeptDetailResult()
         {
+            ViewBag.Title = "学生选课系统-后台管理-院系详情";
             return View();
         }
 

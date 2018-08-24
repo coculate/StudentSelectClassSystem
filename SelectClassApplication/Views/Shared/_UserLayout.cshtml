@@ -63,10 +63,10 @@
 <body>
     <div class="header">
         <ul class=daohang>
-            <li><a href="~/Home/Index">课程信息</a></li>
-            <li><a href="#">教师信息</a></li>
-            <li><a href="#">个人信息</a></li>
-            <li><a href="../Login/Index">退出登录</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="CourseResult">课程信息</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="SelectClassResult">选课信息</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="StudentResult">个人信息</a></li>
+            <li><a asp-area="" asp-controller="Login" asp-action="LoginResult">退出登录</a></li>
         </ul>
     </div>
     <div class="container content">

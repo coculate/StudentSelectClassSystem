@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using StudentSelectClass.Dtos;
 using StudentSelectClass.Models;
 
 namespace StudentSelectClass.DA
@@ -29,21 +31,30 @@ namespace StudentSelectClass.DA
         }
 
         /// <summary>
-        /// 新增学生信息
+        /// 学生登录
         /// </summary>
-        /// <param name="student"></param>
+        /// <param name="dto"></param>
         /// <returns></returns>
-        public int AddStudents(TblStudent student)
+        public bool StudentLogin(TblStudentDto dto)
         {
+            var student = XuanKeDB.TblStudent.FirstOrDefault(s => s.StudentNum == dto.StudentNum && s.StudentPassword == dto.StudentPassword);
             if (student == null)
             {
-                return 0;
+                return false;
             }
-            else
-            {
-                XuanKeDB.TblStudent.Add(student);
-                return XuanKeDB.SaveChanges();
-            }
+            return true;
+        }
+
+        /// <summary>
+        /// 新增学生信息
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
+        public void AddStudents(TblStudentDto dto)
+        {
+            var entity = dto.ToEntity();
+            XuanKeDB.TblStudent.Add(entity);
+            XuanKeDB.SaveChanges();
         }
 
         #endregion
@@ -64,7 +75,9 @@ namespace StudentSelectClass.DA
             }
             else
             {
-                XuanKeDB.TblStudent.Remove(student);
+                student.IsDeleted = true;
+                student.DeleteBy = "admin";
+                student.DeleteTime = DateTime.Now;
                 return XuanKeDB.SaveChanges();
             }
         }
@@ -72,6 +85,13 @@ namespace StudentSelectClass.DA
         #endregion
 
         #region 改
+
+        public void ModifyStudent(TblStudentDto dto)
+        {
+            var entity = dto.ToEntity();
+            XuanKeDB.TblStudent.Update(entity);
+            XuanKeDB.SaveChanges();
+        }
 
         #endregion
 

@@ -64,7 +64,7 @@ namespace StudentSelectClass
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Admin}/{action=Index}/{id?}");
+                    template: "{controller=Login}/{action=LoginResult}/{id?}");
             });
         }
     }

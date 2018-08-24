@@ -38,3 +38,9 @@ E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor
 E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\TeacherResult.g.cshtml.cs
 E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SelectClassInfoResult.g.cshtml.cs
 E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\ManagerResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\StudentDetailResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Login\LoginResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\CourseResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\StudentResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\SelectClassResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Login\LoginAdminResult.g.cshtml.cs
