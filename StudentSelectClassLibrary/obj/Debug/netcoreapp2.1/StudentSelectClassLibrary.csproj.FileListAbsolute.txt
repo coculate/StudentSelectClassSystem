@@ -8,4 +8,3 @@ E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\St
 E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.pdb
 E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.runtimeconfig.json
 E:\StudentSelectClassSystem\StudentSelectClassLibrary\bin\Debug\netcoreapp2.1\StudentSelectClassLibrary.runtimeconfig.dev.json
-E:\StudentSelectClassSystem\StudentSelectClassLibrary\obj\Debug\netcoreapp2.1\StudentSelectClassLibrary.csprojAssemblyReference.cache

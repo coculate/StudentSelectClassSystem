@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using StudentSelectClass;
-using StudentSelectClass.DA;
-using StudentSelectClass.Dtos;
-using StudentSelectClass.Models;
+using StudentSelectClassLibrary;
+using StudentSelectClassLibrary.DA;
+using StudentSelectClassLibrary.Dtos;
+using StudentSelectClassLibrary.Models;
 
 namespace SelectClassApplication.Controllers
 {

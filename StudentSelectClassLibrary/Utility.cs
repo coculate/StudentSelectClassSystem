@@ -1,4 +1,4 @@
-﻿namespace StudentSelectClass
+﻿namespace StudentSelectClassLibrary
 {
     public static class Utility
     {

@@ -1,7 +1,7 @@
-using StudentSelectClass.Models;
-using StudentXuanKeSystem.Dtos;
+using StudentSelectClassLibrary.Models;
 
-namespace StudentSelectClass.Dtos {
+namespace StudentSelectClassLibrary.Dtos
+{
     public static class TblXuanKeInformationDtoExtension {
         public static TblXuanKeInformation ToEntity (this TblXuanKeInformationDto dto) {
             if (dto == null) {

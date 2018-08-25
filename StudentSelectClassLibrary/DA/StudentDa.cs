@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using StudentSelectClass.Dtos;
-using StudentSelectClass.Models;
+using StudentSelectClassLibrary.Dtos;
+using StudentSelectClassLibrary.Models;
+using StudentSelectClassLibrary.Query;
 
-namespace StudentSelectClass.DA
+namespace StudentSelectClassLibrary.DA
 {
     public class StudentDa
     {
@@ -101,11 +102,26 @@ namespace StudentSelectClass.DA
         /// 查询所有数据（不分页）
         /// </summary>
         /// <returns></returns>
-        public List<TblStudent> GetStudentsList()
+        public List<TblStudent> GetStudentsList(TblStudentQuery query)
         {
             List<TblStudent> students = new List<TblStudent>();
             students = XuanKeDB.TblStudent.ToList();
             return students;
+        }
+
+        /// <summary>
+        /// 获取学生详细信息
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
+        public TblStudent GetStudentDetail(TblStudentQuery query)
+        {
+            if (string.IsNullOrEmpty(query.StudentNum))
+            {
+                return new TblStudent();
+            }
+            var student = XuanKeDB.TblStudent.Find(query.StudentNum);
+            return student;
         }
 
         #endregion

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using SelectClassApplication.Models;
-using StudentSelectClass.DA;
-using StudentSelectClass.Models;
+using StudentSelectClassLibrary.DA;
+using StudentSelectClassLibrary.Models;
+using StudentSelectClassLibrary.Query;
 
 namespace SelectClassApplication.Controllers
 {
@@ -39,7 +40,8 @@ namespace SelectClassApplication.Controllers
             {
                 XuanKeDB = DBContext
             };
-            List<TblStudent> students = da.GetStudentsList();
+            var query = new TblStudentQuery();
+            List<TblStudent> students = da.GetStudentsList(query);
             ViewBag.students = students;
             return View();
         }
@@ -106,6 +108,7 @@ namespace SelectClassApplication.Controllers
 
         public IActionResult MajorDetailResult()
         {
+            ViewBag.Title = "学生选课系统-后台管理-院系详情";
             return View();
         }
 
@@ -126,6 +129,12 @@ namespace SelectClassApplication.Controllers
 
         public IActionResult SelectClassInfoDetailResult()
         {
+            return View();
+        }
+
+        public IActionResult AddStudentResult()
+        {
+            ViewBag.Title = "学生选课系统-后台管理-新增学生信息";
             return View();
         }
 

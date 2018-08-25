@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace StudentXuanKeSystem.Dtos {
+namespace StudentSelectClassLibrary.Dtos {
     /// <summary>
     /// 专业传输类
     /// </summary>

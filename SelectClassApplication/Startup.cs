@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using StudentSelectClass.Models;
+using StudentSelectClassLibrary.Models;
 
-namespace StudentSelectClass
+namespace StudentSelectClassLibrary
 {
     public class Startup
     {

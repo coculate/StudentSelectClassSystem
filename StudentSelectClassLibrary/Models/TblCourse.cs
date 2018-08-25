@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StudentSelectClass.Models
+namespace StudentSelectClassLibrary.Models
 {
     public partial class TblCourse
     {

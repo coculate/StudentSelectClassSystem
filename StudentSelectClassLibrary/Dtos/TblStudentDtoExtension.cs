@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StudentSelectClass.Models;
-using StudentXuanKeSystem.Dtos;
+﻿using StudentSelectClassLibrary.Models;
 
-namespace StudentSelectClass.Dtos {
+namespace StudentSelectClassLibrary.Dtos
+{
     public static class TblStudentDtoExtension {
         /// <summary>
         /// 转化为实体

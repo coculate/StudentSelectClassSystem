@@ -1,7 +1,7 @@
-﻿using StudentSelectClass.Models;
-using StudentSelectClass.Dtos;
+﻿using StudentSelectClassLibrary.Models;
+using StudentSelectClassLibrary.Dtos;
 
-namespace StudentSelectClass.DA
+namespace StudentSelectClassLibrary.DA
 {
     public class CourseDa
     {

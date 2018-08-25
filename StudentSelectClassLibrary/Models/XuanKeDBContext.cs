@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace StudentSelectClass.Models
+namespace StudentSelectClassLibrary.Models
 {
     public partial class XuanKeDBContext : DbContext
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StudentSelectClass.Models
+namespace StudentSelectClassLibrary.Models
 {
     public partial class TblDept
     {

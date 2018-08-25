@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StudentSelectClass.DA
+namespace StudentSelectClassLibrary.DA
 {
     public class ManagerDa
     {

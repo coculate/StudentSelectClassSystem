@@ -1,7 +1,7 @@
-using StudentSelectClass.Models;
-using StudentXuanKeSystem.Dtos;
+using StudentSelectClassLibrary.Models;
 
-namespace StudentSelectClass.Dtos {
+namespace StudentSelectClassLibrary.Dtos
+{
     public static class TblMajorDtoExtension {
         public static TblMajor ToEntity (this TblMajorDto dto) {
             if (dto == null) {
