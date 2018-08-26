@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using StudentSelectClassLibrary;
 using StudentSelectClassLibrary.DA;
 using StudentSelectClassLibrary.Models;
@@ -16,17 +17,17 @@ namespace SelectClassApplication.Controllers
         public IActionResult StudentResult()
         {
             ViewBag.Title = "学生选课系统-学生端-学生信息";
-            if (string.IsNullOrEmpty(SessionCode.username))
+            var query = new TblStudentQuery();
+            var stucode = HttpContext.Session.GetString(SessionCode.username);
+            if (string.IsNullOrEmpty(stucode))
             {
                 return Redirect("../Login/LoginResult");
             }
-            var da = new StudentDa {
-                XuanKeDB=DBContext
-            };
-            var query = new TblStudentQuery
+            var da = new StudentDa
             {
-                StudentNum = SessionCode.username
+                XuanKeDB = DBContext
             };
+            query.StudentNum = stucode;
             var student = da.GetStudentDetail(query);
             return View();
         }

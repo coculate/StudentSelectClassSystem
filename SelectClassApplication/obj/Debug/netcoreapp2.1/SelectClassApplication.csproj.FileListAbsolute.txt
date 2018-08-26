@@ -45,3 +45,4 @@ E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor
 E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\SelectClassResult.g.cshtml.cs
 E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Login\LoginAdminResult.g.cshtml.cs
 E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\CourseDetailResult.g.cshtml.cs
+E:\StudentSelectClassSystem\SelectClassApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddStudentResult.g.cshtml.cs

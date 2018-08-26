@@ -1,8 +1,42 @@
-﻿
+﻿@using StudentSelectClassLibrary.Models
 @{
-    var title= ViewBag.Title;
+    var title = ViewBag.Title;
+    List<TblStudent> students = ViewBag.students;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>@title</h2>
+<div class="row col-xs-12">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>生日</th>
+                <th>院系</th>
+                <th>专业</th>
+                <th>班级</th>
+                <th>密码</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in students)
+            {
+            <tr>
+                <td>@item.StudentId</td>
+                <td>@item.StudentNum</td>
+                <td>@item.StudentName</td>
+                <td>@item.StudentSex</td>
+                <td>@item.StudentBirthday</td>
+                <td>@item.StudentId</td>
+                <td>@item.MajorNum</td>
+                <td>@item.StudentPassword</td>
+            </tr>
+        }
+            </tbody>
+        </table>
+    </div>
 

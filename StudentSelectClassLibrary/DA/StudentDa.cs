@@ -99,13 +99,17 @@ namespace StudentSelectClassLibrary.DA
         #region 查
 
         /// <summary>
-        /// 查询所有数据（不分页）
+        /// 查询所有数据
         /// </summary>
         /// <returns></returns>
         public List<TblStudent> GetStudentsList(TblStudentQuery query)
         {
             List<TblStudent> students = new List<TblStudent>();
-            students = XuanKeDB.TblStudent.ToList();
+            students = XuanKeDB.TblStudent
+                .Skip(query.Page * (query.PageIndex - 1))
+                .Take(query.Page)
+                .OrderByDescending(s => s.CreateTime)
+                .ToList();
             return students;
         }
 
@@ -120,7 +124,7 @@ namespace StudentSelectClassLibrary.DA
             {
                 return new TblStudent();
             }
-            var student = XuanKeDB.TblStudent.Find(query.StudentNum);
+            var student = XuanKeDB.TblStudent.FirstOrDefault(s => s.StudentNum == query.StudentNum);
             return student;
         }
 

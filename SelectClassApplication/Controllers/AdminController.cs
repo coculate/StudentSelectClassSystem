@@ -40,7 +40,11 @@ namespace SelectClassApplication.Controllers
             {
                 XuanKeDB = DBContext
             };
-            var query = new TblStudentQuery();
+            var query = new TblStudentQuery
+            {
+                PageIndex = 1,
+                Page = 20
+            };
             List<TblStudent> students = da.GetStudentsList(query);
             ViewBag.students = students;
             return View();
