@@ -28,6 +28,30 @@ namespace SelectClassApplication.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 前端退出登录
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult LoginOutResult()
+        {
+            HttpContext.Session.SetString(SessionCode.username, "");
+            return Redirect("../Login/LoginResult");
+        }
+
+        /// <summary>
+        /// 后端退出登录
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult LoginOutAdminResult()
+        {
+            HttpContext.Session.SetString(SessionCode.adminname, "");
+            return Redirect("../Login/LoginAdminResult");
+        }
+
+        /// <summary>
+        /// 前端登录接口
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult LoginSubmit()
         {
@@ -54,6 +78,10 @@ namespace SelectClassApplication.Controllers
             return Redirect("../Login/LoginResult");
         }
 
+        /// <summary>
+        /// 后端登录接口
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult LoginAdminSubmit()
         {

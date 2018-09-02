@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "aa85e161b008e20be1c8a8426bea23bf7b6c5af4"
+    "signature": "e8f0464aade6749ecb7024a2511334f56cf891e8"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,10 +9,113 @@
       "StudentSelectClassLibrary/1.0.0": {
         "dependencies": {
           "EPPlus.Core": "1.5.4",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "cloudsu.util": "1.0.0"
         },
         "runtime": {
           "StudentSelectClassLibrary.dll": {}
+        }
+      },
+      "AspectCore.Abstractions/0.5.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Abstractions.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      },
+      "AspectCore.Core/0.5.0": {
+        "dependencies": {
+          "AspectCore.Abstractions": "0.5.0",
+          "AspectCore.Extensions.Reflection": "0.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Core.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      },
+      "AspectCore.Extensions.AspectScope/0.5.0": {
+        "dependencies": {
+          "AspectCore.Core": "0.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.AspectScope.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      },
+      "AspectCore.Extensions.Autofac/0.5.0": {
+        "dependencies": {
+          "AspectCore.Core": "0.5.0",
+          "Autofac": "4.8.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.Autofac.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      },
+      "AspectCore.Extensions.Reflection/0.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/AspectCore.Extensions.Reflection.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      },
+      "Autofac/4.8.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.ComponentModel": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {
+            "assemblyVersion": "4.8.1.0",
+            "fileVersion": "4.8.1.0"
+          }
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.2.2": {
+        "dependencies": {
+          "Autofac": "4.8.1",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "4.2.2.0",
+            "fileVersion": "4.2.2.0"
+          }
+        }
+      },
+      "AutoMapper/7.0.1": {
+        "runtime": {
+          "lib/netcoreapp2.0/AutoMapper.dll": {
+            "assemblyVersion": "7.0.1.0",
+            "fileVersion": "7.0.1.0"
+          }
+        }
+      },
+      "cloudsu.util/1.0.0": {
+        "dependencies": {
+          "AspectCore.Extensions.AspectScope": "0.5.0",
+          "AspectCore.Extensions.Autofac": "0.5.0",
+          "AutoMapper": "7.0.1",
+          "Autofac": "4.8.1",
+          "Autofac.Extensions.DependencyInjection": "4.2.2",
+          "System.Linq.Dynamic.Core": "1.0.8.9"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Util.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "EPPlus.Core/1.5.4": {
@@ -54,7 +157,34 @@
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
+      "System.ComponentModel/4.3.0": {},
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0"
+        }
+      },
+      "System.ComponentModel.TypeConverter/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Primitives": "4.3.0"
+        }
+      },
       "System.Data.Common/4.3.0": {},
+      "System.Diagnostics.TraceSource/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
       "System.Drawing.Common/4.5.0-preview1-25914-04": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
@@ -80,6 +210,20 @@
           }
         }
       },
+      "System.Linq.Dynamic.Core/1.0.8.9": {
+        "dependencies": {
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.TraceSource": "4.3.0",
+          "System.Linq.Queryable": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "System.Linq.Queryable/4.3.0": {},
       "System.Xml.XPath.XmlDocument/4.3.0": {
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {
@@ -95,6 +239,69 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspectCore.Abstractions/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fQDiIrOGH5vDkLfSWsQjSaf8aK1JyD0Mh8lzr+oUjf2TxQ2R9IcBtf6Mv0hnyMSrc0qA9sI/3YFPYPjHiWOfRA==",
+      "path": "aspectcore.abstractions/0.5.0",
+      "hashPath": "aspectcore.abstractions.0.5.0.nupkg.sha512"
+    },
+    "AspectCore.Core/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F65asZpPynOKshZ7W/hNK9JA7eP6/ptYMrQXAlD47F+ue2ILluRx34grlcqeGhV7kAIAb5SOwHEvux4rq5ykLQ==",
+      "path": "aspectcore.core/0.5.0",
+      "hashPath": "aspectcore.core.0.5.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.AspectScope/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/w61wn6DML+s/+9nhAf83WTlNyob2BS3EP1jeGUJnRxTl2DZcA3wPyuRP36fWcMowwdmnX0gSApjAJwaOmsRAA==",
+      "path": "aspectcore.extensions.aspectscope/0.5.0",
+      "hashPath": "aspectcore.extensions.aspectscope.0.5.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.Autofac/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ckDiWxyawlkwPcjPvGJOl2Mz8V905tDblTbGC/uAeuICgm1rosuo41ggboY+CzmKeNynq4r04blTqaXZxEBt1Q==",
+      "path": "aspectcore.extensions.autofac/0.5.0",
+      "hashPath": "aspectcore.extensions.autofac.0.5.0.nupkg.sha512"
+    },
+    "AspectCore.Extensions.Reflection/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ExGw2xUPG9HlXpRWwQk8PoeD1atZUruGOI1/TNOCJpeSjXQuI9uEKzDYynFeGHT1CSyO7rJ94cZArkfN4wEssg==",
+      "path": "aspectcore.extensions.reflection/0.5.0",
+      "hashPath": "aspectcore.extensions.reflection.0.5.0.nupkg.sha512"
+    },
+    "Autofac/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aIT9rupCOdab5RMfxvWTBmOxGU77tLqmvSF4V89SzV6oQcJrtuKw/Xp55xy9EijSktbMka55SbroAPOyT+lziw==",
+      "path": "autofac/4.8.1",
+      "hashPath": "autofac.4.8.1.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nkspkD4qRKCvM1WG6bFLAuEwvbajEhEe7U3Q6XISCBEG6ZamOy52JACXnx3VumZksjPTylavkUZRzBBY7T2R+w==",
+      "path": "autofac.extensions.dependencyinjection/4.2.2",
+      "hashPath": "autofac.extensions.dependencyinjection.4.2.2.nupkg.sha512"
+    },
+    "AutoMapper/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6xHbhsW09sWjjYuE1sqhYn25PQzB6UEUVPME5uhlaIz2NR2+L3+FGbVxvknJKug1BLp6VTLxDb5RcGXKMm0ieQ==",
+      "path": "automapper/7.0.1",
+      "hashPath": "automapper.7.0.1.nupkg.sha512"
+    },
+    "cloudsu.util/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pgLueA9Ff62neau9kgb1swO1TxlRLmK6N1h4OOOhTQEB7zBHolXHvvNWXj6v7/7iUczV73pQ88sp7j+gMcRdLQ==",
+      "path": "cloudsu.util/1.0.0",
+      "hashPath": "cloudsu.util.1.0.0.nupkg.sha512"
     },
     "EPPlus.Core/1.5.4": {
       "type": "package",
@@ -152,6 +359,27 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.TypeConverter/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "path": "system.componentmodel.typeconverter/4.3.0",
+      "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
+    },
     "System.Data.Common/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -159,12 +387,33 @@
       "path": "system.data.common/4.3.0",
       "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },
+    "System.Diagnostics.TraceSource/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
+      "path": "system.diagnostics.tracesource/4.3.0",
+      "hashPath": "system.diagnostics.tracesource.4.3.0.nupkg.sha512"
+    },
     "System.Drawing.Common/4.5.0-preview1-25914-04": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-xe9fRaplCuFFkqa2FNSuhZrux4ENP6b1sKxcGIqI0en4aEDMHsHQxtIwwkMsvlKDHoFlLcPkvpUefUnttajA8w==",
       "path": "system.drawing.common/4.5.0-preview1-25914-04",
       "hashPath": "system.drawing.common.4.5.0-preview1-25914-04.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.0.8.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AgrkBBc32kDQnXvJyriHduj0we5xAOJg6m43T2rrs0beI2L2I/adrUjssFXYb7fuxVjFSYRAEV48o6/ZILCxxg==",
+      "path": "system.linq.dynamic.core/1.0.8.9",
+      "hashPath": "system.linq.dynamic.core.1.0.8.9.nupkg.sha512"
+    },
+    "System.Linq.Queryable/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
+      "path": "system.linq.queryable/4.3.0",
+      "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
     },
     "System.Xml.XPath.XmlDocument/4.3.0": {
       "type": "package",

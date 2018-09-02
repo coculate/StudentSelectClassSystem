@@ -1,8 +1,44 @@
-﻿
+﻿@using StudentSelectClassLibrary.Models
 @{
     var title = ViewBag.Title;
-    Layout = "~/Views/Shared/_UserLayout.cshtml";
+ TblStudent student = ViewBag.student;
+ Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h2>@title</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            学号
+        </div>
+        <div class="col-md-8" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            @student.StudentNum
+        </div>
+        <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            姓名
+        </div>
+        <div class="col-md-8" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            @student.StudentName
+        </div>
+        <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            性别
+        </div>
+        <div class="col-md-8" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            @student.StudentSex
+        </div>
+        <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            生日
+        </div>
+        <div class="col-md-8" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            @student.StudentBirthday
+        </div>
+        <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            班级
+        </div>
+        <div class="col-md-8" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            @student.MajorNum
+        </div>
+    </div>
+    <br>
+    
+</div>
 
