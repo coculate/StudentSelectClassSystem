@@ -58,7 +58,11 @@ namespace StudentSelectClassLibrary
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Login}/{action=LoginResult}/{id?}");
-            });
+                routes.MapRoute(
+                  name: "Admin",
+                  template: "{controller=Admin}/{action=Index}/{id?}");
+            }
+            );
         }
     }
 }
