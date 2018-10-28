@@ -47,12 +47,12 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
+    </div>
+    <div class="container">
         <footer>
-            <p>&copy; 2018 - 学生选课系统</p>
+            <p>&copy; <span class="datetime"></span>  - 学生选课系统</p>
         </footer>
     </div>
-
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -73,7 +73,26 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
-
+    <script>
+        function getNow(s) {
+            return s < 10 ? '0' + s : s;
+        }
+        function getDateTime() {
+            var myDate = new Date();
+            //获取当前年
+            var year = myDate.getFullYear();
+            //获取当前月
+            var month = myDate.getMonth() + 1;
+            //获取当前日
+            var date = myDate.getDate();
+            var h = myDate.getHours();       //获取当前小时数(0-23)
+            var m = myDate.getMinutes();     //获取当前分钟数(0-59)
+            var s = myDate.getSeconds();
+            var now = year + '月' + getNow(month) + "日" + getNow(date) + " " + getNow(h) + ':' + getNow(m) + ":" + getNow(s);
+            $('.datetime').text(now);
+        }
+        setInterval(getDateTime, 1000);
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
